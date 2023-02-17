@@ -45,3 +45,12 @@
     console.log("o numero 1 é:",number11)
     console.log("O número 12 é:",number12)
     console.log(`A soma é ${soma(number11,number12)}`)
+
+//segunda forma
+
+    function soma2(number14,number15){
+        total = number14 + number15
+        return total
+    }
+    soma2(14,15)
+    console.log(total)
