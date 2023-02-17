@@ -29,3 +29,19 @@
     //number1 e number2 são parâmetros/dados da função
 
     sum(2,1) //-> argument ou argumentos para os meus parâmetros.
+
+
+
+/*Retornando valores dentro da fução
+     #passar valores dentro de uma função para o resto do código usa a palavra reservada return seguida do valor.
+*/
+
+    function soma(number11,number12){
+        return number11 + number12
+        
+    }
+    let number11 = 11
+    let number12 = 12
+    console.log("o numero 1 é:",number11)
+    console.log("O número 12 é:",number12)
+    console.log(`A soma é ${soma(number11,number12)}`)
