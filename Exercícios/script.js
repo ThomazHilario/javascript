@@ -19,6 +19,8 @@
 
    }
 
+
+
 /* function:parameters (parâmetros)
     #Parâmetros são dados em funções.
 */    
@@ -54,3 +56,46 @@
     }
     soma2(14,15)
     console.log(total)
+
+
+
+/* 
+    function scope 
+
+        #Parâmetros, mesmo se tiverem o mesmo nome que alguma outra variável do seu código, são apenas modificados e persistem no escopo da função.
+*/ 
+
+
+    let nome = "thomaz"
+
+    function createname(nome){
+        nome = "jõao" 
+        return nome
+    }
+    console.log(nome)
+    console.log(createname(nome))
+
+
+/* Function hoisting
+    #uma função pode ser declarada depois de ser utilizada,porem isso não acontece dentro de variáveis
+
+*/
+
+    myname()
+
+    function myname(){
+        console.log("My name is Tom Riddle")
+        
+    }
+    
+   
+
+/* Arrow function
+    #jeito moderno de se escrever um código da function expression
+*/
+
+let mynameis = () => {
+    console.log("thomaz")
+}
+
+mynameis()
