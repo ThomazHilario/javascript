@@ -99,3 +99,18 @@ let mynameis = () => {
 }
 
 mynameis()
+
+
+/* callback functiion
+    #é uma função sendo passada para outra função como parâmetro 
+*/
+ function createnames(name){
+    console.log("antes da função")
+    name()
+    console.log("Depois da função")
+ }
+ createnames(function name(){
+    obj = {chamada:"Callback"}
+    console.log(obj.chamada)
+    
+ })
