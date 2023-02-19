@@ -105,12 +105,11 @@ mynameis()
     #é uma função sendo passada para outra função como parâmetro 
 */
  function createnames(name){
-    console.log("antes da função")
+    console.log("antes do callback")
     name()
-    console.log("Depois da função")
  }
+
  createnames(function name(){
-    obj = {chamada:"Callback"}
-    console.log(obj.chamada)
-    
+    obj = {nome:"callback"}
+    console.log(obj.nome)
  })
