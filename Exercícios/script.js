@@ -115,14 +115,14 @@ mynameis()
  })
 
  /* Funções construtoras
-     # criar um novo objeto
-    # Expressão new
-    # this - palavra chave: se referencia ao nome que está fora da function
+    # utilizadas para criar um novos objetos
+    # usa a palavra this para se referir ao objeto criado
+    # Usa new para dar um novo significado
  */
 
-    function Names(name){
+    function Createnames(name){
         this.name = name
     }
 
-    let thomaz = new Names("thomaz")
-    console.log(thomaz.name)
+    let name1 = new Createnames("thomaz")
+    console.log(name1.name)
