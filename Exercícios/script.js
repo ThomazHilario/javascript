@@ -101,7 +101,7 @@ let mynameis = () => {
 mynameis()
 
 
-/* callback functiion
+/* callback function
     #é uma função sendo passada para outra função como parâmetro 
 */
  function createnames(name){
