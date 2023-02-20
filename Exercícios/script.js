@@ -45,7 +45,7 @@
     let number11 = 11
     let number12 = 12
     console.log("o numero 1 é:",number11)
-    console.log("O número 12 é:",number12)
+    console.log("O número 2 é:",number12)
     console.log(`A soma é ${soma(number11,number12)}`)
 
 //segunda forma
@@ -113,3 +113,16 @@ mynameis()
     obj = {nome:"callback"}
     console.log(obj.nome)
  })
+
+ /* Funções construtoras
+    # Expressão new
+    # criar um novo objeto
+    # this - palavra chave: se referencia ao nome que está fora da function
+ */
+
+    function Names(name){
+        this.name = name
+    }
+
+    let thomaz = new Names("thomaz")
+    console.log(thomaz.name)
