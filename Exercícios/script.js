@@ -115,8 +115,8 @@ mynameis()
  })
 
  /* Funções construtoras
+     # criar um novo objeto
     # Expressão new
-    # criar um novo objeto
     # this - palavra chave: se referencia ao nome que está fora da function
  */
 
