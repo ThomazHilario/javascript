@@ -1,128 +1,25 @@
-/* Fuctions (Funções) 
-    #é um agrupamento de código
-    #posso reutilizar este código
-    #dar significado/ um nome pra minha função
-*/
-    function createnames() {
-        console.log("thomaz")
-        console.log("Albevânia")
-        console.log("Valdevino")
-        console.log("Jõao")
-    }
-
-/* function: expression
-    #é uma função dentro de uma variável
-
-*/
-
-   let min = function() {
-
-   }
-
-
-
-/* function:parameters (parâmetros)
-    #Parâmetros são dados em funções.
-*/    
-
-    function sum (number1,number2){
-        console.log(number1 + number2)
-    }
-    //number1 e number2 são parâmetros/dados da função
-
-    sum(2,1) //-> argument ou argumentos para os meus parâmetros.
-
-
-
-/*Retornando valores dentro da fução
-     #passar valores dentro de uma função para o resto do código usa a palavra reservada return seguida do valor.
-*/
-
-    function soma(number11,number12){
-        return number11 + number12
-        
-    }
-    let number11 = 11
-    let number12 = 12
-    console.log("o numero 1 é:",number11)
-    console.log("O número 2 é:",number12)
-    console.log(`A soma é ${soma(number11,number12)}`)
-
-//segunda forma
-
-    function soma2(number14,number15){
-        total = number14 + number15
-        return total
-    }
-    soma2(14,15)
-    console.log(total)
-
-
+// manipulando dados //
 
 /* 
-    function scope 
-
-        #Parâmetros, mesmo se tiverem o mesmo nome que alguma outra variável do seu código, são apenas modificados e persistem no escopo da função.
-*/ 
-
-
-    let nome = "thomaz"
-
-    function createname(nome){
-        nome = "jõao" 
-        return nome
-    }
-    console.log(nome)
-    console.log(createname(nome))
-
-
-/* Function hoisting
-    #uma função pode ser declarada depois de ser utilizada,porem isso não acontece dentro de variáveis
-
-*/
-
-    myname()
-
-    function myname(){
-        console.log("My name is Tom Riddle")
-        
-    }
+    Prototype
     
-   
-
-/* Arrow function
-    #jeito moderno de se escrever um código da function expression
+        # Javascript - Baseado em Prototype.
+        # Prototype chain-cadeia de caracteres,possuindo suas funcionalidades e atributos.
+        # __proto__
+        # serve para manipular dados de string,number,objetos,arrays e etc
 */
 
-let mynameis = () => {
-    console.log("thomaz")
-}
+/*Type conversion e Type coersion
 
-mynameis()
-
-
-/* callback function
-    #é uma função sendo passada para outra função como parâmetro 
+    #alteração de um tipo de dado para outro tipo de dado.
+    #Type conversion- O programador muda o tipo do dado.
+    #Type coersion- O JavaScript Muda o tipo de dado implicitamente.
 */
- function createnames(name){
-    console.log("antes do callback")
-    name()
- }
 
- createnames(function name(){
-    obj = {nome:"callback"}
-    console.log(obj.nome)
- })
+    //Type conversion
 
- /* Funções construtoras
-    # utilizadas para criar um novos objetos
-    # usa a palavra this para se referir ao objeto criado
-    # Usa new para dar um novo significado
- */
+    console.log(Number("9") + 10)
 
-    function Createnames(name){
-        this.name = name
-    }
+    //Type coersion
 
-    let name1 = new Createnames("thomaz")
-    console.log(name1.name)
+    console.log("20" + 5)
