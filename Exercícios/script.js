@@ -23,3 +23,34 @@
     //Type coersion
 
     console.log("20" + 5)
+
+/*Manipulando string e Números*/
+
+//String para número
+    let number = "2023"
+    console.log(Number(number))
+
+//Número para String
+
+    let number2 = 1
+    console.log(String(number2))
+
+
+/*Contando caracteres e dígitos*/    
+
+//Contanto Caracteres
+
+    let palavra = "retangulo"
+    console.log(palavra.length)
+
+//Contanto Dígitos
+
+    let number8 = 1234
+    console.log(String(number8).length)
+
+/* Casas decimais */
+
+    //deciditr casas decimais com:toFixed e trocar ponto por virgula usando:Replace
+
+    let number12 = 1222.555555
+    console.log(number12.toFixed(2).replace(".",","))
