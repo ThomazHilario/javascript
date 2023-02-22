@@ -54,3 +54,14 @@
 
     let number12 = 1222.555555
     console.log(number12.toFixed(2).replace(".",","))
+
+/* Transformando letras maiusculas em minusculas e vice versa  */
+
+    //maiusculas para minusculas:toLowerCase()
+
+    let word1 = "KRATOS"
+    console.log(word1.toLowerCase())
+
+    //Minusculas para maiusculas:toUpperCase()
+
+    console.log(word1.toLowerCase().toUpperCase())
