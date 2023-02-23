@@ -50,7 +50,7 @@
 
 /* Casas decimais */
 
-    //deciditr casas decimais com:toFixed e trocar ponto por virgula usando:Replace
+    //decidir quantas casas decimais eu quero apos o número usando:toFixed e trocar ponto por virgula usando:Replace
 
     let number12 = 1222.555555
     console.log(number12.toFixed(2).replace(".",","))
@@ -94,12 +94,12 @@
 
 /* Contando elementos de um array */    
 
-let array = [
-    "a",
-    {name:"thomaz"},
-    function (){
-        return "olá"
-    }
-]
+    let array = [
+        "a",
+        {name:"thomaz"},
+        function (){
+            return "olá"
+        }
+    ]
 
-console.log(array.length)
+    console.log(array.length)
