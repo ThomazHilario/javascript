@@ -65,3 +65,41 @@
     //Minusculas para maiusculas:toUpperCase()
 
     console.log(word1.toLowerCase().toUpperCase())
+
+/* Separando strings */
+
+    //Separar um texto usamos o método split(),Que transformará o texto em um array de string baseado no argumento.
+
+    let phrase = "você não vai jogar video game hoje"
+    let phrasesplit = phrase.split(" ")
+    console.log(phrasesplit)
+
+    //Para juntar o array é possivel usar o método join(),que juntaria essas palavras ou você escolheria a forma de separar ela por meio do argumento.
+
+    console.log("ola mundo".split(" ").join("-"))
+
+
+/* Encontrar palavras especificas em um frase*/
+
+    //Para encontrar uma palavra especifica em uma frase podemos usar o método includes("").
+
+    let phrase3 = "hoje o dia será perfeito"
+
+    console.log(phrase3.includes("hoje"))
+
+/* Criando um array com construtor */    
+
+    let myarray = new Array("a", "b","c")
+    console.log(myarray)
+
+/* Contando elementos de um array */    
+
+let array = [
+    "a",
+    {name:"thomaz"},
+    function (){
+        return "olá"
+    }
+]
+
+console.log(array.length)
