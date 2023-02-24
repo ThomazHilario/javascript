@@ -136,5 +136,7 @@ linguagens.shift()
 
 //encontrar posição de um item em um Array: indexOf("") - nome do item
 let position = linguagens.indexOf("Js")
+
 linguagens.splice(position,1)
+
 console.log(linguagens)
