@@ -103,3 +103,38 @@
     ]
 
     console.log(array.length)
+
+/* Strings para Arrays 
+    #Para transforma uma cadeia de caracteres(string) em elementos de array devemos usar o objeto Array com o método from(): Array.from()
+*/    
+    let word3 = "incrivel"
+    console.log(Array.from(word3))
+
+
+/* Manipulando Arrays */
+
+let linguagens = ["html","Css","Js"]
+
+//Adicionar um item no começo do array: .unsshift()
+linguagens.unshift("Github")
+
+//
+//Adicionar item no final de um Array: .push()
+linguagens.push("React")
+
+//Remover item do começo em um Array: .pop()
+linguagens.pop()
+
+//Remover item do final de um Array: .shift()
+linguagens.shift()
+
+//pegar somente alguns itens de um Array usando: .slice(0,0)
+//console.log(linguagens.slice(1,3))
+
+//Remover 1 ou mais itens de um Array: .splice(0,0)
+//linguagens.splice(,)
+
+//encontrar posição de um item em um Array: indexOf("") - nome do item
+let position = linguagens.indexOf("Js")
+linguagens.splice(position,1)
+console.log(linguagens)
