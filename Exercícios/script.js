@@ -94,3 +94,18 @@ console.log(2 ** 8)
 //Com Parenteses ():    
     let resultado2 = (20 + (2 * 3) + 4 ) / 3
     console.log(resultado2)
+
+
+/* Operador de igual e diferente de
+    #Servem Para comparar valores e retornar os dados em dados do tipo Boolean
+    #Para dizer se uma variável é igual a, usamos dois simbolos de iguais seguido: ==
+    #para dizer se uma variável é diferente de,usamos um símbolo de exclamação seguido de igual:!=
+*/    
+
+    let number6 = 10;
+    let number7 = 12;
+
+    console.log(number6 == 10)
+    console.log(number6 != number7)
+    console.log(number7 == 11)
+    console.log(number7 != 12)
