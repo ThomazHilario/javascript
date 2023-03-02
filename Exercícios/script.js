@@ -81,3 +81,16 @@ console.log(number2)
 //exponencial número elevado a outro: **
 
 console.log(2 ** 8)
+
+
+/* Grouping Operator 
+    # O grouping operator nada mais é do que usarmos parênteses(),para mudar a precendência de uma expressão aritmética,ou seja mudar a resolução da expressão matemática.
+*/
+
+//Sem Parenteses ():
+    let resultado1 = 20 + 2 * 3 + 4 / 3
+    console.log(resultado1)
+
+//Com Parenteses ():    
+    let resultado2 = (20 + (2 * 3) + 4 ) / 3
+    console.log(resultado2)
