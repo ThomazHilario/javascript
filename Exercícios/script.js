@@ -109,3 +109,20 @@ console.log(2 ** 8)
     console.log(number6 != number7)
     console.log(number7 == 11)
     console.log(number7 != 12)
+
+
+/* Comparador estritamente igual e estritamente diferente de 
+        #Vai compara tipos de dados e retornar um boolean
+*/
+
+//estritamente igual a : ===
+
+let number9 = 10;
+console.log(number9 === "10")
+
+//estritamente diferente de : !==
+
+let number10 = "10"
+console.log(number10 !== 10)
+
+
