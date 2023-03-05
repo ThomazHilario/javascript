@@ -125,4 +125,18 @@ console.log(number9 === "10")
 let number10 = "10"
 console.log(number10 !== 10)
 
+/*Operadores de comparação: 
+    maior que: >
+    menor que: < 
+    maior ou igual a: >=
+    menor ou igual a: < =
+*/
+
+console.log(number10 > 9)
+console.log(number10 < 9)
+console.log(number10 >= 11)
+console.log(number10 <= 10)
+
+
+
 
