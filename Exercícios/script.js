@@ -138,5 +138,47 @@ console.log(number10 >= 11)
 console.log(number10 <= 10)
 
 
+/* Operadores de atribuição ( Assignment) */
+
+let x
+
+x = 1
+
+//addition assingment
+
+x += 7
+
+console.log(x)
+
+//Subtracion assingment
+
+x -= 2
+
+console.log(x)
+
+//Multiplication assingment
+
+x *= 6
+
+console.log(x)
+
+//Division assingment
+
+x /= 6
+
+console.log(x)
+
+//remainder assignment
+
+x %= 2
+
+console.log(x)
+
+//exponetiation assingment
+
+x **= 2
+
+console.log(x)
+
 
 
