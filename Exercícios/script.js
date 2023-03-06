@@ -182,3 +182,20 @@ console.log(x)
 
 
 
+/* Operadores Lógicos
+        # 2 valores booleanos,quando verificados resultaá em verdeadeiro ou falso
+*/
+    let chocolate = true;
+    let leite = false;
+
+// AND &&:Significa que quer um e outro.
+
+console.log(chocolate && leite)
+
+// OR ||:Significa uma coisa ou outra.
+
+console.log(chocolate || leite)
+
+//NOT !:Significa negação de um valor boleaano.
+
+console.log(!leite)
