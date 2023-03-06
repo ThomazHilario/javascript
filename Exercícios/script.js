@@ -199,3 +199,16 @@ console.log(chocolate || leite)
 //NOT !:Significa negação de um valor boleaano.
 
 console.log(!leite)
+
+
+/* Operadores Condicionais Ternários
+    # Operadores de condição que podem imprimir valores diferentes com base nelas.
+    # Usaremos ? para (então) e : para (se não)
+*/
+
+let café = true;
+let pão = false;
+
+const cafédamanhã = café && pão ? "Vou Comer" : "Vou ir Comprar"
+
+console.log(cafédamanhã)
