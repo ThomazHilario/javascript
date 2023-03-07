@@ -212,3 +212,14 @@ let pão = false;
 const cafédamanhã = café && pão ? "Vou Comer" : "Vou ir Comprar"
 
 console.log(cafédamanhã)
+
+/* Operadores para String */
+
+//Comparison (comparação)
+
+console.log("a" == "b")
+
+//concatenação
+
+let name1 = "Thomaz"
+console.log(name1 += " Alves")
