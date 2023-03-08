@@ -223,3 +223,26 @@ console.log("a" == "b")
 
 let name1 = "Thomaz"
 console.log(name1 += " Alves")
+
+/*Falsy and Truthy
+    #São quando um valor é considerado falso ou verdadeiro em contextos onde um booleano é obrigatorio de(condicionais e loops).
+     seja tanto para falsy ou para truthy.
+
+    #valores falsos: Falsy
+    * 0
+    * -0
+    * ""
+    * null
+    * underfined
+    * NaN
+    #valores verdadeiros: Truthy
+    * {}
+    * []
+    * 1
+    * 3.23
+    * "0"
+    * "false"
+    * -1
+    * Infinity
+    * -Infinity 
+*/
