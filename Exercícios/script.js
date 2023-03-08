@@ -229,20 +229,20 @@ console.log(name1 += " Alves")
      seja tanto para falsy ou para truthy.
 
     #valores falsos: Falsy
-    * 0
-    * -0
-    * ""
-    * null
-    * underfined
-    * NaN
+        * 0
+        * -0
+        * ""
+        * null
+        * underfined
+        * NaN
     #valores verdadeiros: Truthy
-    * {}
-    * []
-    * 1
-    * 3.23
-    * "0"
-    * "false"
-    * -1
-    * Infinity
-    * -Infinity 
+        * {}
+        * []
+        * 1
+        * 3.23
+        * "0"
+        * "false"
+        * -1
+        * Infinity
+        * -Infinity 
 */
