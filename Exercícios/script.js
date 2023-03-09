@@ -246,3 +246,18 @@ console.log(name1 += " Alves")
         * Infinity
         * -Infinity 
 */
+/* Table in Operator precendence
+    Tabela de ordem de precendência dos operadores
+
+    # groupin ()
+    # negação e incremento ! -- ++
+    # Multiplicação e divisão * /
+    # Adição e subtração + -
+    # relacional < > <= >=
+    #igualdade == != === !==
+    # And &&
+    # Or ||
+    # Conditional ? :
+    assigment(Atribuição) += -= *= /= **= %=
+
+*/
