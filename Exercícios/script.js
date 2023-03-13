@@ -31,4 +31,32 @@ if (IMC < 18.5){
     console.log("Esta no seu peso adequado")
 }
 
+/* Switch
+    # tem uma estrutura similar ao if e else porem usando outras palavras reservadas.
+    # Tudo que estiver dentro de switch faz parte da minha estrutura.
+    # criaremos um case para cada caso na estrututra
+    # usaremos o break para parar uma instrução
+    # Se não existe um caso usaremos o defaut no final
+*/
 
+function calculadora(n1,operador,n2){
+    let result = 0;
+    switch(operador){//puxa o operador para o switch
+        case "+":
+            result = n1 + n2
+            break
+        case "-":
+            result= n1 - n2
+            break
+        case "*":
+            result = n1 * n2
+            break
+        case "/":
+            result = n1 / n2
+            break
+        default:
+            console.log("este operador não existe")                
+    }
+    return result
+}
+console.log(calculadora(8,"/",2))
