@@ -39,6 +39,21 @@ if (IMC < 18.5){
     # Se não existe um caso usaremos o defaut no final
 */
 
+let expression = "a";
+switch(expression){
+  case "a":
+    console.log("ola")
+    break
+  case "b":
+    console.log("Hello world!")
+    break
+  default:
+    console.log("Digite a ou b")
+    break
+}
+
+// Segundo exemplo
+
 function calculadora(n1,operador,n2){
     let result = 0;
     switch(operador){//puxa o operador para o switch
