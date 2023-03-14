@@ -78,9 +78,9 @@ console.log(calculadora(8,"/",2))
 
 
 /* throw,try e catch 
-    #throw significa disparar ou lançar uma exceção.
-    #try significa tentar.
-    catch significa capturar.
+    #throw significa disparar ou lançar uma exceção de erro.
+    #try significa tentar ou colocar um código que possa falhar entre as chaves .
+    catch significa capturar,captura o erro do código que o try executou e armazena na variável e.
 
     #A função abaixo ira dispara um erro caso o name seja do tipo vazio,caso não tivesse logo abaixo da função o try executando a função e o catch capturando algum erro da função, o meu programa iria dar erro e iria parar o processo
 */
