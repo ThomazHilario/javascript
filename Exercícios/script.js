@@ -75,3 +75,26 @@ function calculadora(n1,operador,n2){
     return result
 }
 console.log(calculadora(8,"/",2))
+
+
+/* throw,try e catch 
+    #throw significa disparar ou lançar uma exceção.
+    #try significa tentar.
+    catch significa capturar.
+
+    #A função abaixo ira dispara um erro caso o name seja do tipo vazio,caso não tivesse logo abaixo da função o try executando a função e o catch capturando algum erro da função, o meu programa iria dar erro e iria parar o processo
+*/
+
+function mynames(name = ""){
+    if(name == ""){
+        throw "Nome é obrigatório"
+    }
+    console.log(name)
+}
+
+try{
+    mynames()
+} catch(e){
+    console.log(e)
+}
+console.log("apos o try/catch")
