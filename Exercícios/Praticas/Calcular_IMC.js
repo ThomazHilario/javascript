@@ -14,7 +14,7 @@ function IMC(){
     }else if(IMC > 30 && IMC <=39.9){
         window.alert("Você está com obesidade de grau II")
     }else{
-        window.alert("Você esta com obesidade de nivel III")
+        window.alert("Você esta com obesidade de grau III")
     }
 }
 IMC()
