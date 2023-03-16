@@ -1,4 +1,5 @@
 /* Estrutura de repetição */
+
 /* For 
     #For significa para.
     #Para declarar o for precisamos nos atentar em três detalhes ao declara-lo;for(inicializar um variável,condição para sua continuação,expressão final).
@@ -19,8 +20,8 @@ for(let x = 10; x > 0;x--){
     # usa quando não sabe o momento da parada.
     # Declaramos a variável antes de declarar o while
 */
-let n = 10
-while(n > 5){
+let n = 0
+while(n <= 10){
     console.log(n)
-    n--
+    n++
 }
