@@ -25,3 +25,41 @@ while(n <= 10){
     console.log(n)
     n++
 }
+
+/* Do while
+    # O do while,ele executa o processo e depois verifica a condição
+*/
+let n1 = 1
+do{
+    console.log(n1)
+    n1++
+} while(n1<= 10)
+
+/* For of 
+    # Serve para iterar qualquer caractere do tipo string ou iterar elemento de um array. 
+*/
+
+let nome = "Thomaz"
+for(let name of nome){
+    console.log(name)
+}
+
+let nomes = ["Ana","Breno","Cintia","Daniel","Endrick"]
+for(let names of nomes){
+    console.log(names)
+}
+
+/* For in 
+    # Cria um loop pegando as propriedades de um objeto
+*/
+
+let student = {
+    name: "Thomaz",
+    age: 13,
+    data_de_nascimento:"14/02/2010"
+}
+
+for(let information in student){
+    console.log(information)
+    console.log(student[information])
+}
