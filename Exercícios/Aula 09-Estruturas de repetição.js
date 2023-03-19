@@ -63,3 +63,12 @@ for(let information in student){
     console.log(information)
     console.log(student[information])
 }
+
+//usando for para somar elementos de um array
+
+let valores = [100,200,300,400,500]
+let soma = 0
+for(let i = 0;i < valores.length;i++){
+    soma += valores[i]
+}
+console.log(soma)
