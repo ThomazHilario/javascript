@@ -50,3 +50,34 @@ function balance(){
     }
 }
 balance()
+
+//Crie uma função que receba uma string em celsius ou fahrenheit e faça a transformação de uma unidade para outra
+
+function transformgrau(grau){
+    let fahrenheit = grau.toUpperCase().includes("F")
+    let celsius = grau.toUpperCase().includes("C")
+
+    if(!fahrenheit && !celsius){
+        throw "Valor invalido"
+    }
+
+    //fahrenheit para celsius
+    let updategrau = Number(grau.toUpperCase().replace("F",""))
+    let formula = (fahrenheit) => (fahrenheit - 32) * 5/9 
+    let upgrau = "C"
+
+    //celsius para fahrenheit
+    if(celsius){
+        updategrau = Number(grau.toUpperCase().replace("C",""))
+        formula = (celsius) =>  celsius * 9/5 + 32
+        upgrau = "F"
+    }
+
+    return formula(updategrau) + upgrau
+}
+
+try{
+   console.log(transformgrau("50c"))
+}catch(e){
+    console.log(e)
+}
