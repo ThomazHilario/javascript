@@ -1,3 +1,4 @@
+//Faça com que a entrada de um número seja convertida em tempo
 function verifyenter(number){
     if(typeof number === "number"){
         return number
