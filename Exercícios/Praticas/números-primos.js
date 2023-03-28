@@ -16,4 +16,4 @@ function numberPrimo(number){
     }
 }
 
-numberPrimo()
+numberPrimo(10)
