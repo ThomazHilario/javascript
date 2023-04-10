@@ -13,3 +13,9 @@ let body = document.getElementsByTagName('body')[0]
 console.log(body.childNodes)
 console.log(body.children)
 console.log(body.firstElementChild)
+
+//Navegar pelos elementos irmãos
+
+let script = document.getElementsByTagName('script')[0]
+
+console.log(script.previousElementSibling)
