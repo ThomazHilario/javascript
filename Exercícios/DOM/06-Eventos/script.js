@@ -21,3 +21,6 @@ input.onclick = function(){
         h2.remove(h2)
     }
 }
+
+//Adicionando eventos via javascript:exemplo1 - basta pegar um elementos e nele usar a função  addEventListener('tipo do eventos','função').
+
