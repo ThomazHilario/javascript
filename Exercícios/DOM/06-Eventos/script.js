@@ -22,5 +22,11 @@ input.onclick = function(){
     }
 }
 
-//Adicionando eventos via javascript:exemplo1 - basta pegar um elementos e nele usar a função  addEventListener('tipo do eventos','função').
+//Adicionando eventos via javascript
+// Exemplo 1 - basta pegar um elementos e nele usar a função  addEventListener('tipo do eventos','função').
 
+//Exemplo 2 - Pegar o elemento e nele usar a função do evento recebendo uma função: h1.onclick = function(){}
+
+
+
+// Argumento event serve para mostrar as propriedades e funcionalidades que um evento tem, e que podemos usar neste evento.
