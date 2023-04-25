@@ -7,4 +7,13 @@
 /* Vantagens do NodeJS */
 // Rápido na execução.
 // Alta escalabilidade.
-// Aplicações de ponta. 
+// Aplicações de ponta.
+
+/* O que é o NodeJs? */
+// Javascript Runtime Enviroment.
+// Ambiente de execução do código javascript do lado do servidor.
+// Troca informações com o so e o so troca informações com o hardware.
+
+//motor V8
+//interpretador de JS para a linguagem de máquina.
+//Focado paar Chrome
