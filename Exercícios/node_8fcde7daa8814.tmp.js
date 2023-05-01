@@ -35,4 +35,4 @@ setTimeout(function(){
 
 setInterval(function mensagem(){
     console.log('hello world')
-},1000)
+},2000)
