@@ -33,9 +33,9 @@ setTimeout(function(){
 
 // set Interval(function(){},intervalo de tempo): está função permite receber outra função como parâmetro(callback),no qual será chamada/executada durante um intervalo de tempo.
 
-//setInterval(function mensagem(){
-    //console.log('hello world')
-//},1000)
+setInterval(function mensagem(){
+    console.log('hello world')
+},1000)
 
 /* clearTimeout() e clearInterval() */
 
