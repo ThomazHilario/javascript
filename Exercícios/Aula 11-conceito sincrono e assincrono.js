@@ -33,6 +33,23 @@ setTimeout(function(){
 
 // set Interval(function(){},intervalo de tempo): está função permite receber outra função como parâmetro(callback),no qual será chamada/executada durante um intervalo de tempo.
 
-setInterval(function mensagem(){
-    console.log('hello world')
+//setInterval(function mensagem(){
+    //console.log('hello world')
+//},1000)
+
+/* clearTimeout() e clearInterval() */
+
+// Podemos parar o setTimeout e o setInterval para que eles não sejam mais executados.(mais usado no setInterval).
+// primeiro precisamos colocar nossos timers em uma variável.
+// Para o setTimeout podemos usar conceitos de if e else para parar a execução.
+// Para o setInterval podemos usar o setTimeout e depois do tempo parar o setInterval.
+
+let dados = setInterval(function(){
+    console.log('dado pegado')
 },1000)
+
+setTimeout(function(){
+    clearInterval(dados)
+    console.log('dados coletados com sucesso')
+},11000)
+
