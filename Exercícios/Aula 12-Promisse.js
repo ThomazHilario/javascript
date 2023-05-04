@@ -34,4 +34,16 @@ promessa
     .catch(erro => console.log(erro))
     .finally(() => (console.log('promessa finalizada')))
 
-console.log('aguardando')    
+console.log('aguardando')
+
+/* Promise com fetch */
+// fetch(): Função que recebe como argumento a url do fetch,no qual vai buscar a url, normalmente a fetch é uma promessa pendente(pending).
+
+fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+.then(resposta => resposta.json())
+
+/* encadeamento de then */
+
+.then(dado => fetch(dado.name))
+.then(name => name.json())
+.then(result => console.log(result))
