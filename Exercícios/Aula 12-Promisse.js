@@ -37,7 +37,7 @@ promessa
 console.log('aguardando')
 
 /* Promise com fetch */
-// fetch(): Função que recebe como argumento a url do fetch,no qual vai buscar a url, normalmente a fetch é uma promessa pendente(pending).
+// fetch(): Função que recebe como argumento auma url ,no qual vai buscar na url requisição de dados desta url para serem consumidaspelo programador, normalmente a fetch é uma promessa pendente(pending).
 
 fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 .then(resposta => resposta.json())
@@ -47,3 +47,13 @@ fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 .then(dado => fetch(dado.name))
 .then(name => name.json())
 .then(result => console.log(result))
+
+/* Promisse com axios */
+
+// Biblioteca Axios: É um HTTP cliente baseado em promessas usada no browesr e no node.js.
+
+import axios from "axios"
+
+axios.get('https://pokeapi.co/api/v2/pokemon/ditto')
+    .then(result => axios.get(result.name))
+    .then(name => console.log(name))
