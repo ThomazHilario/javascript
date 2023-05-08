@@ -72,3 +72,22 @@ Promise.all([
     console.log(resposta[1].moves)
 })
 .catch(erro => {console.log(erro)})
+
+/* async e await */
+// Funções assincronas
+// Maneira de escrever promise mais simples.
+
+
+const promessa2 = new Promise((resolve)=>{
+    return resolve('ola')
+})
+
+async function dados(){
+    try{
+        console.log(await promessa2)
+    }catch (e){
+        console.log(e)
+    } finally{
+        console.log('finalizado')
+    }
+}
