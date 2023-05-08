@@ -57,3 +57,18 @@ import axios from "axios"
 axios.get('https://pokeapi.co/api/v2/pokemon/ditto')
     .then(result => axios.get(result.name))
     .then(name => console.log(name))
+
+/* Promises em paralelo */
+
+// Executar mais de uma promessa ao mesmo tempo.
+// Promise.all([]), dentro do promise.all usamos o fetch ou axios para fazer as requisições.Ambas serão partes de um array.
+
+Promise.all([
+    axios.get('https://pokeapi.co/api/v2/pokemon/ditto'),
+    axios.get('https://pokeapi.co/api/v2/pokemon/ditto/stats')
+])
+.then(resposta => {
+    console.log(resposta[0].name)
+    console.log(resposta[1].moves)
+})
+.catch(erro => {console.log(erro)})
