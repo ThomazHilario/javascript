@@ -91,3 +91,22 @@ async function dados(){
         console.log('finalizado')
     }
 }
+
+
+/* Async e await com fetch */
+
+function Pokemon(value){
+    return fetch(`https://pokeapi.co/api/v2/pokemon/${value}`)
+    .then(result => result.json())
+}
+
+async function pegandoDados(pokemon){
+    try{
+        const dadoDoPokemon = await Pokemon(pokemon)
+        const name = dadoDoPokemon.name
+        console.log(name)
+    }catch(e){
+        console.log(e)
+    }
+}
+pegandoDados()
