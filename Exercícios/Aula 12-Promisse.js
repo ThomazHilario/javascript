@@ -110,3 +110,16 @@ async function pegandoDados(pokemon){
     }
 }
 pegandoDados()
+
+/* Async e Await com axios */
+
+import axios from 'axios'
+
+async function pokemonaxios(value){
+    const api = await axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
+
+    const named = api.name
+
+    console.log(named)
+}   
+pokemonaxios('charmander')
