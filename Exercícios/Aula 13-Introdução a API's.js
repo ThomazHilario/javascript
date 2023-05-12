@@ -8,7 +8,8 @@
 
 /* Arquivo JSON */
 
-// Arquivo que armazena informações e dados
-// Declarado por chaves {}
-// Formado por chaves e valores {"chaves": "valor",}
-// Pode-se ter objetos e arrays
+// JavaScript Object Notation.
+// Arquivo que armazena informações e dados.
+// Declarado por chaves {}.
+// Formado por chaves e valores {"chaves": "valor",}.
+// Pode-se ter dados do tipo objetos,arrays,numeros,string,null.
