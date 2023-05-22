@@ -38,3 +38,25 @@ function newPokemon(newpokemon){
 }
 
 newPokemon(newpokemon)
+
+/* Fazendo PUT: Upgrade */
+
+const UpgradePokemon = {
+    name: 'Lincoln',
+    type: 'Null'
+}
+
+function upgradePokemon(update){
+    fetch(`${url}/1`{
+        method:"PUT",
+        body:JSON.stringify(update),
+        headers:{
+            "Content-type":"application/json; charset=UTF-8"
+        }
+    })
+        .then(response => response.json())
+        .then(data => data)
+        .catch(erro => console.log(erro))
+}
+
+upgradePokemon(UpgradePokemon)
