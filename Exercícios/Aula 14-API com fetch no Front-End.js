@@ -47,7 +47,7 @@ const UpgradePokemon = {
 }
 
 function upgradePokemon(update){
-    fetch(`${url}/1`{
+    fetch(`${url}/1`,{
         method:"PUT",
         body:JSON.stringify(update),
         headers:{
