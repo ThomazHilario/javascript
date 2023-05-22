@@ -60,3 +60,5 @@ function upgradePokemon(update){
 }
 
 upgradePokemon(UpgradePokemon)
+
+/* Fazendo o DELETE */
