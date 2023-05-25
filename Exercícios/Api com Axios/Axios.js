@@ -25,7 +25,7 @@ button.addEventListener('click',function(){
 const url = "https://www.digi-api.com/api/v1/digimon/"
 
 /* Requisições com Axios */
-
+// usamos axios.get() passando a url para pegar as infomações fornecidas pela api
 
 /* função */
 
