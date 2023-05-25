@@ -28,13 +28,13 @@ const url = "https://www.digi-api.com/api/v1/digimon/"
 
 
 /* função */
+
 /* nome do digimon */
 
 function getDigimon(digimon){
     axios.get(`${url}${digimon}`)
     .then(response => {
-        const name_api = response.data.name
-        nameDigi.innerHTML = name_api
+        nameDigi.innerHTML = response.data.name
     })
     .catch(error => console.log(error))
 }
@@ -63,9 +63,8 @@ function getType(digimon){
 function getImgDigi(digimon){
     axios.get(`${url}${digimon}`)
     .then(response => {
-        const img_api = response.data.images[0].href
         imgDigi.style.display = 'block'
-        imgDigi.src = img_api
+        imgDigi.src = response.data.images[0].href
     })
     .catch(erro => console.log(erro))
 }
