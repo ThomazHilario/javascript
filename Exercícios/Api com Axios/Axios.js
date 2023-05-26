@@ -12,10 +12,10 @@ const imgDigi = document.getElementById('img_api')
 /* button event */
 
 button.addEventListener('click',function(){
-    getDigimon(nameInput.value)
-    getAtribute(nameInput.value)
-    getType(nameInput.value)
-    getImgDigi(nameInput.value)
+        getImgDigi(nameInput.value)
+        getDigimon(nameInput.value)
+        getAtribute(nameInput.value)
+        getType(nameInput.value)
 })
 
 
@@ -27,12 +27,12 @@ const url = "https://www.digi-api.com/api/v1/digimon/"
 /* Requisições com Axios */
 // usamos axios.get() passando a url para pegar as infomações fornecidas pela api
 
-/* função */
+/* funções */
 
 /* nome do digimon */
 
-function getDigimon(digimon){
-    axios.get(`${url}${digimon}`)
+async function getDigimon(digimon){
+    await axios.get(`${url}${digimon}`)
     .then(response => {
         nameDigi.innerHTML = response.data.name
     })
@@ -40,8 +40,8 @@ function getDigimon(digimon){
 }
 /* atributo do digimon */
 
-function getAtribute(digimon){
-    axios.get(`${url}${digimon}`)
+async function getAtribute(digimon){
+    await axios.get(`${url}${digimon}`)
     .then(response => {
         const atribute_api = response.data.attributes[0].attribute
         atributeDigi.innerHTML = atribute_api
@@ -50,8 +50,8 @@ function getAtribute(digimon){
 }
 /* tipo do digimon */
 
-function getType(digimon){
-    axios.get(`${url}${digimon}`)
+async function getType(digimon){
+    await axios.get(`${url}${digimon}`)
     .then(response => {
         const type_api = response.data.types[0].type
         typeDigi.innerHTML = type_api
@@ -60,8 +60,8 @@ function getType(digimon){
 }
 /* imagem do digimon */
 
-function getImgDigi(digimon){
-    axios.get(`${url}${digimon}`)
+async function getImgDigi(digimon){
+    await axios.get(`${url}${digimon}`)
     .then(response => {
         imgDigi.style.display = 'block'
         imgDigi.src = response.data.images[0].href
