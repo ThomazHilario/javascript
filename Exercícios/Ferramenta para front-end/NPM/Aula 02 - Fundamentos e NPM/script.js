@@ -24,4 +24,4 @@ console.log(path.basename('opera'))
 
 const functionmodule = require('./export.js');
 
-console.log(functionmodule)
+functionmodule('thomaz')
